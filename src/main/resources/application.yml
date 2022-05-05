@@ -1,0 +1,35 @@
+server:
+  #设置端口
+  port: 8080
+  #设置项目访问路径
+  servlet:
+    context-path: /springboot_mybatis
+
+## 数据源配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    type: com.mysql.cj.jdbc.MysqlDataSource
+
+# mybatis配置
+mybatis:
+  # 映射文件的路径 （resources目录下的mapper目录）
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.tedu.dataaccess.pojo
+  configuration:
+    ## 下划线转驼峰配置
+    map-underscore-to-camel-case: true
+
+pagehelper:
+  helper-dialect: mysql
+
+# 显示dao执行sql语句的log信息
+logging:
+  level:
+    com:
+      shsxt:
+        springboot:
+          dao: debug
