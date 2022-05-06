@@ -6,10 +6,12 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name="category")
 public class Category {
 
     @Id

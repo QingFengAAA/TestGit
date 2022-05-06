@@ -33,7 +33,7 @@ public class TestDataOpt {
     private CategoryMapper categoryMapper;
     
     @Test
-    void testInsert() {
+    public void testInsert() {
         User user=new User();
         user.setUsername("aaaa");
         user.setPassword("1111");

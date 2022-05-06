@@ -2,6 +2,7 @@ package com.tedu.dataaccess;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import tk.mybatis.spring.annotation.MapperScan;
 
 /**
  * @author chenjl
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @desc TODO
  */
 @SpringBootApplication
+@MapperScan(value = "com.tedu.dataaccess.mapper")
 public class TkStarterTest {
 
     public static void main(String[] args) {
