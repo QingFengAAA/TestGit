@@ -3,7 +3,7 @@ server:
   port: 8080
   #设置项目访问路径
   servlet:
-    context-path: /springboot_mybatis
+    context-path: /
 
 ## 数据源配置
 spring:
